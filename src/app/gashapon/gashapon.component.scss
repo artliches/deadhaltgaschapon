@@ -1,0 +1,44 @@
+.gasha-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    place-items: start center;
+
+    .gasha-descrip {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    .body-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        .button-section {
+            display: grid;
+            grid-gap: .5rem;
+            grid-template-areas:
+                "lever"
+                "cursed";
+
+            .lever {
+                grid-area: lever;
+                cursor: pointer;
+                &:hover {
+                    font-weight: bold;
+                    background-image: linear-gradient(to right, red , blue,  purple);
+
+                }
+            }
+            .cursed {
+                grid-area: cursed;
+                cursor: pointer;
+                &:hover {
+                    font-weight: bold;
+                    background-image: linear-gradient(to right, gold, black);
+                }
+            }
+        }
+    }
+}

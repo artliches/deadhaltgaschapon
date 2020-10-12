@@ -100,3 +100,72 @@ export const GASHAPONITEMS = [
     { num: 99, descrip: 'Redbone'},
     { num: 100, descrip: 'Chucklehead'},
 ];
+
+export const BODYPARTS = [
+    'head',
+    'torso',
+    'arm',
+    'arm',
+    'leg',
+    'leg'
+];
+
+export const MODS = [
+    {
+        body: 'head',
+        replacement: [
+            { mod: 'Memory Drive',     attr: 'KNO', function: 'Cast Magicks with a a +1 for each Knock rolled' },
+            { mod: 'Plated Skull',     attr: 'CON', function: 'Take no damage from the next Attack targeting you' },
+            { mod: 'Ractive Sight',    attr: 'SPE', function: 'Choose a single target to skip their next Action activation' },
+            { mod: 'SLR Bridge',       attr: 'STR', function: 'Crew Members may use your STR score for ten minutes' },
+            { mod: 'Recollection Cap', attr: 'KNO', function: 'Recall a mod, event, key term, or info that was forgotten' },
+            { mod: 'Cone Addons',      attr: 'FOC', function: 'See perfectly in pitch darkness for the current Job' },
+        ]
+    },
+    {
+        body: 'torso',
+        replacement: [
+            { mod: 'Nuclear Aorta',    attr: 'STR', function: 'Add two more dice to your next STR roll' },
+            { mod: 'Servo Core',       attr: 'KNO', function: 'Telepathically send a one sentence message to anyone' },
+            { mod: 'Dual Enablers',    attr: 'CON', function: 'Take two non combat Action rolls next turn' },
+            { mod: 'Animalistic Nave', attr: 'FOC', function: 'Next time shot at, roll to take a return projectile Weapon attack' },
+            { mod: 'Central Gyro',     attr: 'SPE', function: 'Knock an enemies Weapon out of their hands' },
+            { mod: 'Reflective Chest', attr: 'CON', function: 'Reflect half damage from next Attack on you to any other target' },
+        ]
+
+    },
+    {
+        body: 'arm',
+        replacement: [
+            { mod: 'Boolean Biceps',   attr: 'SPE', function: 'On a Striking Success make two Attack rolls against one target' },
+            { mod: 'Trigger Flickers', attr: 'FOC', function: 'Take an Attack with a Weapon, deal double damage' },
+            { mod: 'Spiral Threads',   attr: 'KNO', function: 'Recreate the last Magicks effect' },
+            { mod: 'Socket Stretcher', attr: 'SPE', function: 'Grab and return to you any Item within ten feet' },
+            { mod: 'Clack Track',      attr: 'STR', function: 'For current Job unarmed Attacks have a WV of 3' },
+            { mod: 'Woven Ligaments',  attr: 'CON', function: 'Use both your STR and CON scores for next Unarmed Attack' },
+        ]
+    },
+    {
+        body: 'leg',
+        replacement: [
+            { mod: 'Exhaust Belt',   attr: 'STR', function: 'Jump up to 6 times your height' },
+            { mod: 'Hacked Nerves',  attr: 'CON', function: 'Ignore any amount of heat or cold for up to a minute' },
+            { mod: 'Shifting Bones', attr: 'SPE', function: 'Move through a space up to a third of your size' },
+            { mod: 'Rotation Cuffs', attr: 'FOC', function: 'Take a projectile Attack: split the damage between two targets' },
+            { mod: 'Distro Virus',   attr: 'KNO', function: 'Let another Crew Member roll for Magicks with +2' },
+            { mod: 'Turbo Turnkey',  attr: 'STR', function: 'Kick down any door. Period.' },
+        ]
+    },
+
+];
+
+export const RANDOMSAYING = [
+    'SUIT YOURSELF THEN.',
+    'SAY HELLO TO MR. SCRATCH FOR ME.',
+    'ARE YOU AFRAID OF FORTRA?',
+    'THE ALBATROSS AWAITS.',
+    'DO YOU THINK YOU\'RE GAD OR SOMETHING?',
+    'YOUR CREW WILL MISS YOU.',
+    'DYING ON YOUR OWN TERMS HUH?',
+    'DEAD HALTED',
+];

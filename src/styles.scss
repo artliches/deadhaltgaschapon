@@ -5,82 +5,55 @@ body {
 }
 
 .main-grid {
-    place-items: center;
-    padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
-        ". title ."
-        ". descrip ."
-        ". body .";
-    
+    grid-template-areas: 
+        "title"
+        "choices"
+        "display";
+
     .title-section {
         grid-area: title;
         color: #ffb920;
         place-self: center;
+        font-size: 3rem;
     }
-
-    .gasha-descrip {
-        grid-area: descrip;
-        place-self: center;
-        padding-bottom: 10px;
-    }
-
-    .body-section {
-        grid-area: body;
-        grid-gap: 1rem;
+    section.choices-section {
+        grid-area: choices;
+        background-color: black;
+        color: white;
         display: grid;
-        grid-template-columns: minmax(150px, 1fr);
-        grid-template-areas: 
-            "gold-section"
-            "button-section";
 
-        .gold-section {
-            grid-area: gold-section;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        span {
             place-self: center;
-        }
-        .button-section {
-            grid-gap: .5rem;
-            grid-area: button-section;
-            place-self: center;
-            display: grid;
-            grid-template-areas:
-                "lever"
-                "cursed";
-            
-            .lever {
-                grid-area: lever;
-                background-image: linear-gradient(to right, red , blue,  purple);
-                color: white;
-            }
-            .cursed {
-                grid-area: cursed;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: bold;
+
+            &.chosen {
+                background-color: white;
+                color: black;
+                font-weight: bolder;
             }
         }
     }
+    .display-section {
+        padding-top: 1rem;
+        grid-area: display;
+        place-self: center;
 
-}
-
-@media (min-width: 800px) {
-    .main-grid {
-        grid-template-areas:
-        ". title ."
-        ". descrip ."
-        ". body .";
-        grid-template-columns: .5fr 1fr .5fr;
+        .placeholder-text {
+            font-size: 1.5rem;
+        }
     }
-}
-
-img {
-    width: 100%;
-    height: 100%;
 }
 
 button {
     font-size: 1.3rem;
     border: none;
     background-color: black;
-    color: gold;
+    color: white;
 }
 
 label {
@@ -93,4 +66,9 @@ input {
     color: gold;
     border: none;
     font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }

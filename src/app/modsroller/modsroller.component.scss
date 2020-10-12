@@ -1,0 +1,77 @@
+button {
+    border-radius: 50%;
+    font-size: 2rem;
+
+    &:hover {
+        background-color: darkred;
+        font-weight: bold;
+    }
+    &.greenButton:hover {
+        background-color: green;
+    }
+}
+
+.bodyPart {
+    font-weight: bold;
+    color: gold;
+}
+
+.greenText {
+    color: lime;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.medcon-grid {
+    display: grid;
+    place-items: center;
+    grid-gap: 1rem;
+
+    .medcon-descrip {
+        display: grid;
+        place-items: center;
+    }
+
+    .medcon-button-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+
+        grid-gap: 2rem;
+    }
+
+    .new-part-descrip {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr .5fr 2fr;
+        grid-template-areas: 
+            "mod-title attr-title function-title"
+            "mod-descrip attr-descrip function-descrip";
+
+        .mod-title {
+            grid-area: mod-title;
+        }
+        .mod-descrip {
+            grid-area: mod-descrip
+        }
+        .attr-title {
+            grid-area: attr-title;
+        }
+        .attr-descrip {
+            grid-area: attr-descrip;
+        }
+        .function-title {
+            grid-area: function-title;
+        }
+        .function-descrip {
+            grid-area: function-descrip;
+        }
+
+        .title-sections {
+            background-color: black;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    }
+}

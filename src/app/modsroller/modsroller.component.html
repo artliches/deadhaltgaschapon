@@ -1,0 +1,48 @@
+<section class='medcon-grid'>
+    <section class='medcon-descrip'>
+        <div>
+            A console bursts from the ceiling, caught by its servo arm just before hitting the floor. A red cross adorns its side as green words flicker on its screen;
+        </div>
+        <div class='greenText'>
+            WOULD YOU LIKE TO BE HEALED?
+        </div>
+    </section>
+
+    <section class='medcon-button-section'>
+        <button class='greenButton' (click)='getAMod(true)'>Y</button>
+        <button (click)='getAMod(false)'>N</button>
+    </section>
+
+    <section *ngIf='replacement && replacement.mod'>
+        <div>
+            YOUR <span class='bodyPart'>{{bodyPart | uppercase}}</span> IS ALL KINDS OF MESSED UP.
+        </div>
+        <div>
+            MEDCON HAS GIVEN YOU THIS INSTEAD! AREN'T YOU LUCKY?
+        </div>
+        <div class='new-part-descrip'>
+            <div class='mod-title title-sections'>
+                MOD
+            </div>
+            <div class='mod-descrip'>
+                {{replacement.mod}}
+            </div>
+            <div class='attr-title title-sections'>
+                ATTR
+            </div>
+            <div class='attr-descrip'>
+                {{replacement.attr}}
+            </div>
+            <div class='function-title title-sections'>
+                FUNCTION
+            </div>
+            <div class='function-descrip'>
+                {{replacement.function}}
+            </div>
+        </div>
+    </section>
+    <section class='greenText' *ngIf='replacement && !replacement.mod'>
+        {{replacement}}
+    </section>
+</section>
+

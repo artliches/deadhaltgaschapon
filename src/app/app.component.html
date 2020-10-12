@@ -1,24 +1,30 @@
 <section class='main-grid'>
   <h1 class='title-section'>
-    DEADHALT GASHAPON
+    WinterNET
   </h1>
-  <section class='gasha-descrip'>
-    The pinnacle of automated Gear distribution for every Hotel Maintenance Crew.
-    The more Gold you enter, the higher the chance of receiving something remarkably
-    wonderful.
+  
+  <section class='choices-section'>
+    <span [ngClass]="{'chosen': choice === 'medcon'}" (click)='choice = "medcon"'>
+      MEDCON
+    </span>
+    <span [ngClass]="{'chosen': choice === 'malfunction'}"  (click)='choice = "malfunction"'>
+      MALFUNCTIONS
+    </span>
+    <span [ngClass]="{'chosen': choice === 'glitch'}"  (click)='choice = "glitch"'>
+      GLITCHES
+    </span>
+    <span [ngClass]="{'chosen': choice === 'gashapon'}"  (click)='choice = "gashapon"'>
+      GASHAPON
+    </span>
   </section>
 
-  <section class='body-section'>
-    <section class='gold-section'>
-      <label for='goldIn'>GOLD IN </label>
-      <input id='goldIn' [(ngModel)]='goldAmount' type='number' min="0">
-    </section>
-
-    <section class='button-section'>
-      <button class='lever' (click)='pullLever(false)'>PULL THE LEVER!</button>
-      <button class='cursed' (click)='pullLever(true)'>CURSED GOLD? UH OH.</button>
-    </section>
+  <section class='display-section'>
+    <span class='placeholder-text' *ngIf="!choice">
+      WELCOME TO WINTERNET!
+    </span>
+    <app-gashapon *ngIf='choice === "gashapon"'></app-gashapon>
+    <app-modsroller *ngIf='choice === "medcon"'></app-modsroller>
+    <app-glitchesroller *ngIf='choice === "glitch"'></app-glitchesroller>
+    <app-malfunctionsroller *ngIf='choice === "malfunction"'></app-malfunctionsroller>
   </section>
 </section>
-
-<img *ngIf='itemDescrip' src="{{itemDescrip}}">
