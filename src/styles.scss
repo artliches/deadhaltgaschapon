@@ -13,10 +13,22 @@ body {
         "display";
 
     .title-section {
+        display: grid;
+        grid-template-areas:
+            "main version";
         grid-area: title;
         color: #ffb920;
         place-self: center;
-        font-size: 3rem;
+        h1 {
+            grid-area: main;
+            font-size: 3rem;
+            place-self: center;
+        }
+        span {
+            grid-area: version;
+            place-self: center;
+        }
+        
     }
     section.choices-section {
         grid-area: choices;
