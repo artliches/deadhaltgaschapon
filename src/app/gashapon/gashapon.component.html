@@ -6,24 +6,24 @@
             wonderful.
         </div>
         <div>
-            All projectile Weapons come with only 5 Ammo.
+            All projectile Weapons come with only <b>5 Ammo</b>.
         </div>
         <div>
-            The Gashapon allows for ONE free play a day per Crew member. How generous! 
+            The Gashapon allows for <b>ONE free play a day per Crew member</b>. How generous! 
         </div>
-      </section>
+    </section>
     
-      <section class='body-section'>
-        <section class='gold-section'>
-          <label for='goldIn'>GOLD IN </label>
-          <input id='goldIn' [(ngModel)]='goldAmount' type='number' min="0">
-        </section>
-    
-        <section class='button-section'>
-          <button class='lever' (click)='pullLever(false)'>PULL THE LEVER!</button>
-          <button class='cursed' (click)='pullLever(true)'>CURSED GOLD? UH OH.</button>
-        </section>
+    <section class='body-section'>
+      <section class='gold-section'>
+        <label for='goldIn'>GOLD IN </label>
+        <input id='goldIn' [(ngModel)]='goldAmount' type='number' min="0">
       </section>
+  
+      <section class='button-section'>
+        <button class='lever' (click)='pullLever(false)'>PULL THE LEVER!</button>
+        <button class='cursed' (click)='pullLever(true)'>CURSED GOLD? UH OH.</button>
+      </section>
+    </section>
 </section>
 
 <img *ngIf='itemDescrip' src="{{itemDescrip}}">

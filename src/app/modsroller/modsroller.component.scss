@@ -69,10 +69,13 @@ button {
             grid-area: function-descrip;
         }
 
+        .larger-font {
+            font-size: 1.3rem;
+        }
+
         .title-sections {
             background-color: black;
             font-weight: bold;
-            font-size: 1.3rem;
         }
     }
 }
