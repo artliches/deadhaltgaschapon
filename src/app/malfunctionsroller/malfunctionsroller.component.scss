@@ -1,0 +1,19 @@
+.malfunction-main-grid {
+    display: grid;
+
+    .malfunction-display-grid {
+        padding-top: 1rem;
+        place-self: center;
+        display: grid;
+        grid-template-columns: min-content minmax(min-content, 300px);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas:
+            "top-left top-right"
+            "bottom-left bottom-right";
+    }
+}
+
+button:hover {
+    font-weight: bold;
+    background-image: linear-gradient(to right, red , blue,  purple);
+}

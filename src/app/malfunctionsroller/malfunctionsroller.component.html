@@ -1,1 +1,27 @@
-UNDER CONSTRUCTION!
+<section class='malfunction-main-grid'>
+    <p>
+        A Malfunctioned Item will continue to perform its purpose, but now with its own oddity.
+    </p>
+    <p>
+        They are not intended to be negative or positive, just different than before.
+    </p>
+
+    <button (click)='getMalfunction()'>SOMETHING'S DIFFERENT</button>
+    <p *ngIf='changesText'>
+        Your item is different now. <span class='greenText standard-font'>{{changesText}}</span>
+    </p>
+    <section *ngIf='malfunction' class='malfunction-display-grid larger-font'>
+        <div class='top-left title-sections'>
+            MALFUNCTION
+        </div>
+        <div class='top-right title-sections padding-left'>
+            ODDITY
+        </div>
+        <div class='bottom-left'>
+            {{malfunction.malfunction}}
+        </div>
+        <div class='bottom-right padding-left'>
+            {{malfunction.oddity}}
+        </div>
+    </section>
+</section>

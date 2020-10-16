@@ -30,16 +30,13 @@
 
             .lever {
                 grid-area: lever;
-                cursor: pointer;
                 &:hover {
                     font-weight: bold;
                     background-image: linear-gradient(to right, red , blue,  purple);
-
                 }
             }
             .cursed {
                 grid-area: cursed;
-                cursor: pointer;
                 &:hover {
                     font-weight: bold;
                     background-image: linear-gradient(to right, gold, black);

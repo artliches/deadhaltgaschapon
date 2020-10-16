@@ -159,6 +159,40 @@ export const MODS = [
 
 ];
 
+export const MALFUNCTIONS = [
+    { num: 6,   malfunction: 'Hot', oddity: 'Always very warm to the touch' },
+    { num: 7,   malfunction: 'Rapid',   oddity: 'Enacts its function twice with each use' },
+    { num: 8,   malfunction: 'Folding', oddity: 'Folds down twice' },
+    { num: 9,   malfunction: 'Grassy',  oddity: 'Sprouts grass and small twigs' },
+    { num: 10,  malfunction: 'Grow',    oddity: 'Some sections change size' },
+    { num: 11,  malfunction: 'Slippery',    oddity: 'Hard to hold on to' },
+    { num: 12,  malfunction: 'Embiggen',    oddity: 'Continually gets larger' },
+    { num: 13,  malfunction: 'Elemental',   oddity: 'Crackles with energy and shocks on touch' },
+    { num: 14,  malfunction: 'Chilled', oddity: 'Always layered with frost' },
+    { num: 15,  malfunction: 'Sentient',    oddity: 'Speaks and understands languages' },
+    { num: 16,  malfunction: 'Waterwork',   oddity: 'Spurts water when in use' },
+    { num: 17,  malfunction: 'Bellowing',   oddity: 'Screams out whenever used' },
+    { num: 18,  malfunction: 'Aggrevating', oddity: 'Gets louder, stronger, hotter when used multiple times' },
+    { num: 19,  malfunction: 'Swapped', oddity: 'Front and back sections are flipped around in the center' },
+    { num: 20,  malfunction: 'Formswitched',    oddity: 'Cosmetically looks like a completely different Item' },
+    { num: 21,  malfunction: 'Wooden',  oddity: 'Made of wood' },
+    { num: 22,  malfunction: 'Blinding',    oddity: 'Flashes with blinding light when used' },
+    { num: 23,  malfunction: 'Glowing', oddity: 'Always glows slightly' },
+    { num: 24,  malfunction: 'Gibbering',   oddity: 'Mutters, spits, and gibbers always' },
+    { num: 25,  malfunction: 'Cool',    oddity: 'Remarked on consistently as “cool looking”' },
+    { num: 26,  malfunction: 'Destructing', oddity: 'Deals physical damage to objects when used' },
+    { num: 27,  malfunction: 'Announcing',  oddity: 'Says every action it does right before it does it' },
+    { num: 28,  malfunction: 'Rubbery', oddity: 'Looks and feels like a movie prop' },
+    { num: 29,  malfunction: 'Cute',    oddity: 'Adorned with pink and white bows as well as tiny rainbow stickers' },
+    { num: 30,  malfunction: 'Bursting',    oddity: 'Pops, jumps, and skitters randomly' },
+    { num: 31,  malfunction: 'Liquified',   oddity: 'Bends and warps with use' },
+    { num: 32,  malfunction: 'Household',   oddity: 'Changes form to resemble a random household item' },
+    { num: 33,  malfunction: 'Rusty',   oddity: 'Rusted and pockmarked' },
+    { num: 34,  malfunction: 'Insectoid',   oddity: 'Squirming with plated legs and odd protrusions' },
+    { num: 35,  malfunction: 'Gooey',   oddity: 'Sticks to everything it touches, hard to put down' },
+    { num: 36,  malfunction: 'Organic', oddity: 'Made of living, breathing flesh and bone' },
+];
+
 export const RANDOMSAYING = [
     'SUIT YOURSELF THEN.',
     'SAY HELLO TO MR. SCRATCH FOR ME.',
@@ -168,4 +202,15 @@ export const RANDOMSAYING = [
     'YOUR CREW WILL MISS YOU.',
     'DYING ON YOUR OWN TERMS HUH?',
     'DEAD HALTED',
+    'SUDO RM -R'
+];
+
+export const RANDOMCHANGESSAYING = [
+    'THE ONLY CONSTANT IS CHANGE.',
+    'CHANGE IS GOOD!',
+    'I WONDER WHAT\'S NEXT?',
+    'EXPERIENCE BEGETS METAMORPHOSIS.',
+    'EVOLVE OR DIE.',
+    'ONLY FOOLS GO THROUGH LIFE WITHOUT REINVENTING ONESELF.',
+    'INSTALLING VERSION 2.0... OR 3.0?',
 ];
