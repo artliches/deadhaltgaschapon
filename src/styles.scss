@@ -66,6 +66,17 @@ body {
             font-size: 1.3rem;
             font-weight: bold;
 
+            &:hover {
+                transform: scale(1.1);
+                background-color: white;
+                color: black;
+                font-weight: bolder;
+            }
+
+            &:active {
+                transform: scale(.99);
+            }
+
             &.chosen {
                 background-color: white;
                 color: black;
@@ -91,6 +102,10 @@ button {
     background-color: black;
     color: white;
     cursor: pointer;
+
+    &:active {
+        transform: scale(.9);
+    }
 }
 
 label {
