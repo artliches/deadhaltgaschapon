@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class RandomNumberGeneratorService {
+export class RandomGeneratorService {
 
   constructor() { }
 
@@ -17,5 +17,22 @@ export class RandomNumberGeneratorService {
       sumOfDice += this.getRandomNumber(1, numSides);
     }
     return sumOfDice;
+  }
+
+  getRandomSaying(sayingArray: string[], lastSayingIndex: number) {
+    const count = sayingArray.length;
+    let sayingIndex = this.getRandomNumber(0, count - 1);
+
+    if (lastSayingIndex && lastSayingIndex === sayingIndex) {
+      do {
+        sayingIndex = this.getRandomNumber(0, count - 1);
+      } while (sayingIndex === lastSayingIndex);
+    }
+    lastSayingIndex = sayingIndex;
+
+    return {
+      saying: sayingArray[sayingIndex],
+      lastIndex: lastSayingIndex
+    };
   }
 }

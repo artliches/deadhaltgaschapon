@@ -1,0 +1,35 @@
+.main-glitch-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    .results-section-grid {
+        padding-top: 1rem;
+        display: grid;
+        place-self: center;
+        grid-template-columns: minmax(min-content, 150px) minmax(min-content, 450px);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas:
+            "top-left top-right"
+            "bottom-left bottom-right";
+        
+        .top-left {
+            grid-area: top-left;
+        }
+        .top-right {
+            grid-area: top-right;
+        }
+        .bottom-left {
+            grid-area: bottom-left;
+        }
+        .bottom-right {
+            grid-area: bottom-right;
+        }
+    }
+}
+
+button:hover {
+    font-weight: bold;
+    background-image: linear-gradient(to right, red , blue,  purple);
+}

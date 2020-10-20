@@ -8,7 +8,7 @@
 
     <button (click)='getMalfunction()'>SOMETHING'S DIFFERENT</button>
     <p *ngIf='changesText'>
-        Your item is different now. <span class='greenText standard-font'>{{changesText}}</span>
+        Your item is different now. <span class='greenText standard-font'>{{changesText.saying}}</span>
     </p>
     <section *ngIf='malfunction' class='malfunction-display-grid larger-font'>
         <div class='top-left title-sections'>

@@ -1,1 +1,30 @@
-UNDER CONSTRUCTION!
+<section class='main-glitch-grid'>
+    <section class='flavor-text-section'>
+        <p>
+            Glitches are all the bugs and hitches that may arise while using a cybernetic artificial limb.
+        </p>
+        <p>
+            The HM chooses a thematic outcome for what the player tried to achieve, and how the Glitch sent it awry.
+        </p>
+        <p>
+            As an HM, do not think of Glitches in terms of numerical damage, instead in terms of storytelling opportunities.
+        </p>
+    </section>
+    <section class='button-section'>
+        <button (click)='getGlitch()'>GET GLITCH</button>
+    </section>
+    <section *ngIf='glitch' class='results-section-grid larger-font'>
+        <span class='title-sections top-left'>
+            GLITCH
+        </span>
+        <span class='title-sections top-right padding-left'>
+            OUTCOME
+        </span>
+        <span class='bottom-left'>
+            {{glitch.glitch}}
+        </span>
+        <span class='bottom-right padding-left'>
+            {{glitch.outcome}}
+        </span>
+    </section>
+</section>

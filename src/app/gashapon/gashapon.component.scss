@@ -17,16 +17,18 @@
 
     .body-section {
         grid-area: body;
+        grid-gap: 1rem;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
 
         .button-section {
             display: grid;
             grid-gap: .5rem;
             grid-template-areas:
                 "lever"
-                "cursed";
+                "cursed"
+                "toadling";
 
             .lever {
                 grid-area: lever;
@@ -42,6 +44,21 @@
                     background-image: linear-gradient(to right, gold, black);
                 }
             }
+            .toadling {
+                grid-area: toadling;
+                &:hover {
+                    font-weight: bold;
+                    background-image: linear-gradient(to right, gold, green);
+                }
+            }
         }
     }
+}
+
+.saying-grid {
+    padding-top: 1rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }

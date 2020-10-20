@@ -21,9 +21,14 @@
   
       <section class='button-section'>
         <button class='lever' (click)='pullLever(false)'>PULL THE LEVER!</button>
+        <button class='toadling' (click)='pullLever(false, 10)'>LUCKY TOAD!</button>
         <button class='cursed' (click)='pullLever(true)'>CURSED GOLD? UH OH.</button>
       </section>
     </section>
 </section>
 
-<img *ngIf='itemDescrip' src="{{itemDescrip}}">
+<section class='saying-grid greenText' *ngIf='randomSaying'>
+  <b>{{randomSaying.saying}}</b>
+</section>
+
+<img style="padding-top: 1rem" *ngIf='itemDescrip' src="{{itemDescrip}}">

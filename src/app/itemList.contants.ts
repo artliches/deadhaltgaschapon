@@ -193,6 +193,25 @@ export const MALFUNCTIONS = [
     { num: 36,  malfunction: 'Organic', oddity: 'Made of living, breathing flesh and bone' },
 ];
 
+export const GLITCHES = [
+    { num: 3, glitch: 'Lock Up',          outcome: 'No outcome occurs' },
+    { num: 4, glitch: 'Opposite Day',     outcome: 'Outcome occurs directly behind you' },
+    { num: 5, glitch: 'Area Effect',      outcome: 'Outcome is split evenly among all of the targeted party' },
+    { num: 6, glitch: 'Dead Limb',        outcome: 'Outcome occurs, Cybernetic is useless for rest of Job' },
+    { num: 7, glitch: 'Comms Tap',        outcome: 'HM chooses target of outcome' },
+    { num: 8, glitch: 'Fickle Loop',      outcome: 'Outcome occurs half this turn and half next turn' },
+    { num: 9, glitch: 'Build Up',         outcome: 'Outcome occurs to both you and the target' },
+    { num: 10, glitch: 'Locked in',       outcome: 'Outcome occurs on next turn instead' },
+    { num: 11, glitch: 'Floor Buster',    outcome: 'All energy is transfered into destroying the floor beneath you' },
+    { num: 12, glitch: 'Target Jumbler',  outcome: 'Outcome is dealt to a random target in sight' },
+    { num: 13, glitch: 'Wire Trip',       outcome: 'Half the benefits occur if successful' },
+    { num: 14, glitch: 'Blown Fuse',      outcome: 'Outcome occurs, cybernetic catches fire' },
+    { num: 15, glitch: 'Hail Fire',       outcome: 'All beings in the area take 1 Wound' },
+    { num: 16, glitch: 'Over Power',      outcome: 'Outcome deals 5 Wounds to you and target' },
+    { num: 17, glitch: 'Back Fire',       outcome: 'Entire outcome is dealt to you instead' },
+    { num: 18, glitch: 'Script Splicer',  outcome: 'Original target chooses new target of outcome' },
+];
+
 export const RANDOMSAYING = [
     'SUIT YOURSELF THEN.',
     'SAY HELLO TO MR. SCRATCH FOR ME.',
@@ -201,7 +220,7 @@ export const RANDOMSAYING = [
     'DO YOU THINK YOU\'RE GAD OR SOMETHING?',
     'YOUR CREW WILL MISS YOU.',
     'DYING ON YOUR OWN TERMS HUH?',
-    'DEAD HALTED',
+    'DEAD HALTED.',
     'SUDO RM -R'
 ];
 
@@ -213,4 +232,16 @@ export const RANDOMCHANGESSAYING = [
     'EVOLVE OR DIE.',
     'ONLY FOOLS GO THROUGH LIFE WITHOUT REINVENTING ONESELF.',
     'INSTALLING VERSION 2.0... OR 3.0?',
+];
+
+export const RANDOMITEMSAYING = [
+    'WINNER!',
+    'HOW DID THIS EVEN FIT IN HERE?',
+    'OH GADS WHAT IS THAT THING?',
+    'AH, THAT\'S WHERE THAT WENT!',
+    'WHAT A FIND!',
+    'DING DING DING!',
+    'A WINNER IS YOU!',
+    'WINNERS DON\'T DO DRUGS/EAT MEAT/ETC.',
+    'A FOOL AND THEIR COINS ARE SOON PARTED.'
 ];

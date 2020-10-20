@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MALFUNCTIONS, RANDOMCHANGESSAYING } from '../itemList.contants';
-import { RandomNumberGeneratorService } from '../random-number-generator.service';
+import { RandomGeneratorService } from '../random-number-generator.service';
 
 @Component({
   selector: 'app-malfunctionsroller',
@@ -8,28 +8,20 @@ import { RandomNumberGeneratorService } from '../random-number-generator.service
   styleUrls: ['./malfunctionsroller.component.scss']
 })
 export class MalfunctionsrollerComponent {
-  changesText = '';
+  changesText: any;
   lastSaying = -1;
   malfunction: any;
 
   constructor(
-    private randNum: RandomNumberGeneratorService
+    private rand: RandomGeneratorService
   ) { }
 
   getMalfunction() {
-    const totalNumber = this.randNum.getSumOfRandomDice(6, 6);
+    const totalNumber = this.rand.getSumOfRandomDice(6, 6);
     this.malfunction = MALFUNCTIONS.find(x => x.num === totalNumber);
 
-    const count = RANDOMCHANGESSAYING.length;
-    let saying = this.randNum.getRandomNumber(0, count - 1);
-
-    if (this.lastSaying && this.lastSaying === saying) {
-      do {
-        saying = this.randNum.getRandomNumber(0, count - 1);
-      } while (saying === this.lastSaying);
-    }
-    this.lastSaying = saying;
-    this.changesText = RANDOMCHANGESSAYING[saying];
+    this.changesText = this.rand.getRandomSaying(RANDOMCHANGESSAYING, this.lastSaying);
+    this.lastSaying = this.changesText.lastIndex;
   }
 
 }

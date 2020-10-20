@@ -4,11 +4,9 @@
       WinterNET
     </h1>
     <span>
-      v0.3
+      v1.0
     </span>
   </section>
-
-
   
   <section class='choices-section'>
     <span [ngClass]="{'chosen': choice === 'medcon'}" (click)='choice = "medcon"'>
@@ -27,7 +25,13 @@
 
   <section class='display-section'>
     <span class='placeholder-text' *ngIf="!choice">
-      WELCOME TO WINTERNET!
+      <p>WELCOME TO WINTER<b>NET</b>!</p>
+      <p>
+        <b>ERROR!</b>: CONNECTION TO FORT<b>RA</b> HAS BEEN LOST.
+      </p>
+      <p>
+        ATTEMPTING TO RECONNECT TO FORT<b>RA</b>...
+      </p>
     </span>
     <app-gashapon *ngIf='choice === "gashapon"'></app-gashapon>
     <app-modsroller *ngIf='choice === "medcon"'></app-modsroller>
